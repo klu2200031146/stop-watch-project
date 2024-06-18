@@ -1,0 +1,85 @@
+/* Use a more modern font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+}
+
+.container {
+    text-align: center;
+}
+
+.stopwatch {
+    background: #ffffff;
+    padding: 20px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#display {
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.buttons button {
+    font-size: 1em;
+    padding: 12px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#startStop {
+    background-color: #28a745;
+    color: #fff;
+}
+
+#reset {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+#lap {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.buttons button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#laps {
+    margin-top: 30px;
+    text-align: left;
+}
+
+#laps div {
+    background: #ffffff;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+#laps div:nth-child(odd) {
+    background: #f1f1f1;
+}
+
+#laps div span {
+    font-weight: 500;
+}
